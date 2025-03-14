@@ -1,0 +1,34 @@
+{
+  "statistics": {},
+  "files_generated": [
+    {
+      "file": "/home/zahemen/datasets/sft_datasets/intro_conversations.jsonl",
+      "records": 1000
+    },
+    {
+      "file": "/home/zahemen/datasets/sft_datasets/financial_definitions.jsonl",
+      "records": 1592
+    },
+    {
+      "file": "/home/zahemen/datasets/sft_datasets/financial_definitions_dataset.jsonl",
+      "records": 2000
+    },
+    {
+      "file": "/home/zahemen/datasets/sft_datasets/finance_conversations.jsonl",
+      "records": 2000
+    },
+    {
+      "file": "/home/zahemen/datasets/sft_datasets/company_conversations.jsonl",
+      "records": 1354
+    },
+    {
+      "file": "/home/zahemen/datasets/sft_datasets/reddit_finance_conversations.jsonl",
+      "records": 4542
+    },
+    {
+      "file": "/home/zahemen/datasets/sft_datasets/finsight_combined_dataset_20250304_121951.jsonl",
+      "records": 10896
+    }
+  ],
+  "errors": []
+}

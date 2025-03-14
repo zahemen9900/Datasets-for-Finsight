@@ -1,0 +1,438 @@
+{
+  "run_metadata": {
+    "run_id": "ea0ac508",
+    "timestamp": "20250306_100058",
+    "model_type": "qlora",
+    "base_model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "adapter_path": "qlora_output",
+    "device": "cuda",
+    "torch_dtype": "torch.bfloat16"
+  },
+  "metrics_summary": {
+    "finsight_intro": {
+      "rouge1": {
+        "mean": 0.26493912133885156,
+        "std": 0.06754571112329619,
+        "min": 0.08823529411764705,
+        "max": 0.45614035087719296
+      },
+      "rouge2": {
+        "mean": 0.04742915950716869,
+        "std": 0.03782868503367547,
+        "min": 0.0,
+        "max": 0.17857142857142858
+      },
+      "rougeL": {
+        "mean": 0.14735639552985047,
+        "std": 0.0511923553264224,
+        "min": 0.044117647058823525,
+        "max": 0.31111111111111117
+      },
+      "bleu": {
+        "mean": 0.023317881147856045,
+        "std": 0.023636732803568983,
+        "min": 0.0026013352896294265,
+        "max": 0.10082337820101918
+      },
+      "response_length": {
+        "mean": 100.58,
+        "std": 17.249452165213828,
+        "min": 19,
+        "max": 125
+      },
+      "response_financial_terms": {
+        "mean": 7.99,
+        "std": 3.7828428463260275,
+        "min": 0,
+        "max": 23
+      },
+      "response_has_numbers": {
+        "mean": 0.56,
+        "std": 0.4963869458396343,
+        "min": false,
+        "max": true
+      },
+      "response_sentence_count": {
+        "mean": 2.67,
+        "std": 1.5877972162716498,
+        "min": 1,
+        "max": 7
+      },
+      "response_avg_word_length": {
+        "mean": 6.816671667604919,
+        "std": 3.1115669204085297,
+        "min": 5.32051282051282,
+        "max": 37.10526315789474
+      },
+      "response_capitalization": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": true,
+        "max": true
+      },
+      "response_ends_properly": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": true,
+        "max": true
+      }
+    },
+    "reddit_finance": {
+      "rouge1": {
+        "mean": 0.1890057222765648,
+        "std": 0.05118199926760684,
+        "min": 0.03870967741935484,
+        "max": 0.29304029304029305
+      },
+      "rouge2": {
+        "mean": 0.012238089160215928,
+        "std": 0.012194791140422821,
+        "min": 0.0,
+        "max": 0.06278026905829596
+      },
+      "rougeL": {
+        "mean": 0.08477482651638434,
+        "std": 0.018560364586232163,
+        "min": 0.037037037037037035,
+        "max": 0.12698412698412698
+      },
+      "bleu": {
+        "mean": 0.004552266177640174,
+        "std": 0.0027741871616167742,
+        "min": 0.00026258219112466126,
+        "max": 0.017630666611882572
+      },
+      "response_length": {
+        "mean": 100.33,
+        "std": 18.183539259451113,
+        "min": 32,
+        "max": 125
+      },
+      "response_financial_terms": {
+        "mean": 3.09,
+        "std": 2.5262422686670414,
+        "min": 0,
+        "max": 10
+      },
+      "response_has_numbers": {
+        "mean": 0.65,
+        "std": 0.47696960070847283,
+        "min": false,
+        "max": true
+      },
+      "response_sentence_count": {
+        "mean": 3.01,
+        "std": 1.8627667594199766,
+        "min": 1,
+        "max": 12
+      },
+      "response_avg_word_length": {
+        "mean": 5.3722145626873035,
+        "std": 0.7850810149390125,
+        "min": 4.271028037383178,
+        "max": 8.84375
+      },
+      "response_capitalization": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": true,
+        "max": true
+      },
+      "response_ends_properly": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": true,
+        "max": true
+      }
+    },
+    "company_specific_qa": {
+      "rouge1": {
+        "mean": 0.1332183645725532,
+        "std": 0.05838349970955283,
+        "min": 0.016528925619834708,
+        "max": 0.325
+      },
+      "rouge2": {
+        "mean": 0.022810633909763393,
+        "std": 0.02922546614770599,
+        "min": 0.0,
+        "max": 0.15384615384615383
+      },
+      "rougeL": {
+        "mean": 0.08678041046749038,
+        "std": 0.03797606136516892,
+        "min": 0.016,
+        "max": 0.19999999999999998
+      },
+      "bleu": {
+        "mean": 0.00827166040105781,
+        "std": 0.012629196746721083,
+        "min": 0.001784672286871559,
+        "max": 0.0731214927375959
+      },
+      "response_length": {
+        "mean": 105.39,
+        "std": 13.417074942028163,
+        "min": 50,
+        "max": 125
+      },
+      "response_financial_terms": {
+        "mean": 3.03,
+        "std": 2.570816990763831,
+        "min": 0,
+        "max": 13
+      },
+      "response_has_numbers": {
+        "mean": 0.75,
+        "std": 0.4330127018922193,
+        "min": false,
+        "max": true
+      },
+      "response_sentence_count": {
+        "mean": 1.55,
+        "std": 0.6837397165588672,
+        "min": 1,
+        "max": 4
+      },
+      "response_avg_word_length": {
+        "mean": 6.236414215599736,
+        "std": 0.7867127056970261,
+        "min": 5.292035398230088,
+        "max": 12.1
+      },
+      "response_capitalization": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": true,
+        "max": true
+      },
+      "response_ends_properly": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": true,
+        "max": true
+      }
+    },
+    "financial_definitions": {
+      "rouge1": {
+        "mean": 0.19138741672674642,
+        "std": 0.06669625939697843,
+        "min": 0.029197080291970805,
+        "max": 0.33009708737864074
+      },
+      "rouge2": {
+        "mean": 0.028118781918846713,
+        "std": 0.025236874872041952,
+        "min": 0.0,
+        "max": 0.130718954248366
+      },
+      "rougeL": {
+        "mean": 0.1054828944834453,
+        "std": 0.03420073593438797,
+        "min": 0.029197080291970805,
+        "max": 0.2064516129032258
+      },
+      "bleu": {
+        "mean": 0.009475730034511649,
+        "std": 0.011339506828620846,
+        "min": 0.001420812887328434,
+        "max": 0.05287619159368682
+      },
+      "response_length": {
+        "mean": 103.35,
+        "std": 16.46230542785548,
+        "min": 52,
+        "max": 129
+      },
+      "response_financial_terms": {
+        "mean": 3.96,
+        "std": 3.052605444534226,
+        "min": 0,
+        "max": 16
+      },
+      "response_has_numbers": {
+        "mean": 0.64,
+        "std": 0.48,
+        "min": false,
+        "max": true
+      },
+      "response_sentence_count": {
+        "mean": 1.65,
+        "std": 0.8645808232895291,
+        "min": 1,
+        "max": 4
+      },
+      "response_avg_word_length": {
+        "mean": 6.357411638497702,
+        "std": 0.7291090093918093,
+        "min": 5.352380952380952,
+        "max": 10.5
+      },
+      "response_capitalization": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": true,
+        "max": true
+      },
+      "response_ends_properly": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": true,
+        "max": true
+      }
+    },
+    "finance_conversations": {
+      "rouge1": {
+        "mean": 0.20531190532927635,
+        "std": 0.051954998171542255,
+        "min": 0.08558558558558557,
+        "max": 0.32286995515695066
+      },
+      "rouge2": {
+        "mean": 0.03446516434215324,
+        "std": 0.019876592826707302,
+        "min": 0.0,
+        "max": 0.0947867298578199
+      },
+      "rougeL": {
+        "mean": 0.11132645619033549,
+        "std": 0.03343691592730485,
+        "min": 0.04504504504504504,
+        "max": 0.19730941704035876
+      },
+      "bleu": {
+        "mean": 0.011146254472400616,
+        "std": 0.013646307664255605,
+        "min": 1.641287585046826e-05,
+        "max": 0.07261640708094537
+      },
+      "response_length": {
+        "mean": 80.1,
+        "std": 16.15951731952412,
+        "min": 42,
+        "max": 125
+      },
+      "response_financial_terms": {
+        "mean": 4.36,
+        "std": 3.0447331574376104,
+        "min": 0,
+        "max": 14
+      },
+      "response_has_numbers": {
+        "mean": 0.94,
+        "std": 0.23748684174075835,
+        "min": false,
+        "max": true
+      },
+      "response_sentence_count": {
+        "mean": 1.87,
+        "std": 0.9127431182978045,
+        "min": 1,
+        "max": 6
+      },
+      "response_avg_word_length": {
+        "mean": 6.542022962798204,
+        "std": 0.8560303447955555,
+        "min": 5.326086956521739,
+        "max": 10.538461538461538
+      },
+      "response_capitalization": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": true,
+        "max": true
+      },
+      "response_ends_properly": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": true,
+        "max": true
+      }
+    },
+    "overall": {
+      "rouge1": {
+        "mean": 0.19677250604879848,
+        "std": 0.042066755986472824,
+        "min": 0.1332183645725532,
+        "max": 0.26493912133885156
+      },
+      "rouge2": {
+        "mean": 0.02901236576762959,
+        "std": 0.01174348866200123,
+        "min": 0.012238089160215928,
+        "max": 0.04742915950716869
+      },
+      "rougeL": {
+        "mean": 0.10714419663750122,
+        "std": 0.02259355955295951,
+        "min": 0.08477482651638434,
+        "max": 0.14735639552985047
+      },
+      "bleu": {
+        "mean": 0.01135275844669326,
+        "std": 0.006363488054105013,
+        "min": 0.004552266177640174,
+        "max": 0.023317881147856045
+      },
+      "response_length": {
+        "mean": 97.95,
+        "std": 9.118304666987171,
+        "min": 80.1,
+        "max": 105.39
+      },
+      "response_financial_terms": {
+        "mean": 4.486,
+        "std": 1.8242434048119784,
+        "min": 3.03,
+        "max": 7.99
+      },
+      "response_has_numbers": {
+        "mean": 0.708,
+        "std": 0.13075167302944918,
+        "min": 0.56,
+        "max": 0.94
+      },
+      "response_sentence_count": {
+        "mean": 2.15,
+        "std": 0.5828207271537277,
+        "min": 1.55,
+        "max": 3.01
+      },
+      "response_avg_word_length": {
+        "mean": 6.264947009437573,
+        "std": 0.48734099597565567,
+        "min": 5.3722145626873035,
+        "max": 6.816671667604919
+      },
+      "response_capitalization": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "response_ends_properly": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    }
+  },
+  "datasets_info": {
+    "finsight_intro": {
+      "size": 200
+    },
+    "reddit_finance": {
+      "size": 909
+    },
+    "company_specific_qa": {
+      "size": 271
+    },
+    "financial_definitions": {
+      "size": 400
+    },
+    "finance_conversations": {
+      "size": 400
+    }
+  }
+}
