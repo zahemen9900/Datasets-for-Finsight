@@ -13,7 +13,7 @@ The dataset consists of 10,896 conversations containing approximately 16.5 milli
 
 2. **Financial Conversations**: Multi-turn dialogues covering investment advice, market analysis, and financial planning, synthetically generated using high-quality distilled responses from LLMs.
 
-3. **Company Q&A**: Questions and answers about specific companies, earnings reports, and financial statements, sourced from a Finance Q&A dataset.
+3. **Company Q&A**: Questions and answers about specific companies, earnings reports, and financial statements, sourced from a Finance Q&A dataset. 
 
 4. **Introduction Conversations**: Opening dialogues establishing financial advisory context, synthetically generated with the identity of "FinSight", a financial advisor engineered to assist users with financial queries.
 
@@ -28,6 +28,12 @@ The dataset consists of 10,896 conversations containing approximately 16.5 milli
 | Company-Specific Q&A   | 1,010,581    | 1,354         | 746.4           | 32.2       | 45.4     | 67.5          | 1,145     |
 | Financial Definitions | 1,167,424    | 2,000         | 583.7           | 26.0       | 37.4     | 102.6         | 1,282     |
 | Finance Conversations | 7,025,430    | 2,000         | 3,512.7         | 26.1       | 37.5     | 480.7         | 5,670     |
+
+
+
+> The method used to generate these datasets can be found in the main repo: [Findight-AI](https://github.com/zahemen9900/FinsightAI.git)
+
+> Links to publicly available datasets can also be found here: [Reddit Finance](https://huggingface.co/datasets/winddude/reddit_finance_43_250k), [Company Q&A](https://huggingface.co/datasets/virattt/financial-qa-10K)
 
 ## Fine-tuning Approach
 
