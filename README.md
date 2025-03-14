@@ -7,6 +7,20 @@ This repository contains the curated datasets used for fine-tuning SmolLM2-1.7B-
 
 A more detailed paper on the project can be found in this repo here: [Model Paper](metrics/model_paper.md)
 
+## Project Structure
+
+```
+Datasets-for-Finsight/
+├── metrics/                      # Evaluation metrics and research documentation
+│   ├── visualizations/           # Charts and graphs of model performance
+│   ├── qlora_evaluation_results/ # Results from evaluating the QLoRA model
+│   ├── other_visuals/            # Additional visual assets
+│   ├── base_model_evaluation_results/ # Results from evaluating the base model
+│   └── model_paper.md            # Detailed research paper
+├── sft_datasets/                 # Supervised fine-tuning datasets
+└── README.md                     # This file
+```
+
 ## Dataset Composition
 
 The dataset consists of 10,896 conversations containing approximately 16.5 million tokens, with an average of 1,521.6 tokens per conversation. The dataset is composed of five main categories:
