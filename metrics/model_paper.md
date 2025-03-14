@@ -243,7 +243,7 @@ The model showed promising results in all tested aspects, in all the datasets th
 
 The QLoRA fine-tuned model exhibited robust and consistent performance enhancements across all evaluation metrics when compared to the base model. A comprehensive analysis of the metrics reveals a pattern of systematic improvements, with particularly notable gains in precision-oriented measures. The fine-tuned model demonstrated superior capabilities in both unigram and bigram overlap metrics, suggesting enhanced domain-specific knowledge integration. To visualize these multidimensional improvements, we present a radar chart (Figure 1) that illustrates the relative performance gains across all measured metrics, clearly demonstrating the consistent nature of the enhancements achieved through QLoRA fine-tuning.
 
-![Performance Metrics Radar Chart](visualizations/radar_chart_20250306_121621.png)
+<img src="visualizations/radar_chart_20250306_121621.png" alt="Performance Metrics Radar Chart" width="800">
 
 
 #### 4.1.1 A More Detailed Breakdown
@@ -306,31 +306,25 @@ The heatmap below shows the distribution of response quality metrics between the
 
 ### 4.4 Analysis of Model Response Patterns
 
-When examining examples of model responses, we observed distinct patterns of improvement in the fine-tuned model:
+### 4.4 Analysis of Model Response Patterns
 
-**Example 1: Definition Query**
-*Query:* "What is dollar-cost averaging?"
+While we observed distinct patterns of improvement in the fine-tuned model's responses across various financial queries, we encourage readers to experience these improvements firsthand. The fine-tuned model has been made publicly available on Hugging Face for interactive exploration.
 
-*Base model response:*
+To try out the model and compare its responses to financial queries with the base model:
 
-"Dollar-cost averaging is an investment strategy where an investor divides up the total amount to be invested across periodic purchases of a target asset, aiming to reduce the impact of volatility on the overall purchase. The purchases occur regardless of the asset's price and at regular intervals."
+1. Visit the Hugging Face model repository at [zahemen9900/finsight-ai](https://huggingface.co/zahemen9900/finsight-ai)
+2. Use the interactive interface to ask financial questions
+3. Compare the responses with the base model (SmolLM2-1.7B-Instruct)
 
-*QLoRA model response:*
+This hands-on approach will allow readers to directly observe the enhanced capabilities in providing detailed, contextually relevant, and technically accurate responses across various financial topics, from basic definitions to complex investment advice.
 
-"Dollar-cost averaging (DCA) is an investment strategy in which an investor divides the total amount to be invested into equal parts and invests those parts at regular intervals, regardless of the asset's price. This approach aims to reduce the impact of market volatility by spreading out the investment over time. By purchasing more shares when prices are low and fewer shares when prices are high, DCA can potentially lower the average cost per share over the long term."
+The model demonstrates particularly notable improvements in:
+- Depth and accuracy of financial explanations
+- Appropriate use of technical terminology
+- Balanced and nuanced financial advice
+- Contextual awareness in multi-turn financial conversations
 
-**Example 2: Financial Advice Query**
-*Query:* "Should I invest in tech stocks right now?"
-
-*Base model response:*
-
-"Investing in tech stocks can be a good idea if you believe in the long-term growth potential of the technology sector. However, it's important to consider your risk tolerance and investment goals before making any decisions."
-
-*QLoRA model response:*
-
-"Investing in tech stocks can be a viable option if you have a long-term investment horizon and believe in the growth potential of the technology sector. However, it's crucial to assess your risk tolerance, diversify your portfolio, and stay informed about market trends and company performance. Consider consulting with a financial advisor to align your investment strategy with your financial goals and risk appetite."
-
-These examples illustrate the fine-tuned model's improved ability to provide detailed, contextually relevant, and technically accurate responses, enhancing its utility in financial advisory contexts.
+These improvements significantly enhance the model's utility in financial advisory contexts, as can be verified through direct interaction with the model.
 
 ## 5. Discussion
 
