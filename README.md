@@ -5,7 +5,7 @@ A curation of the datasets used for adapting (fine-tuning) SmolLM-V2 to Finsight
 
 This repository contains the curated datasets used for fine-tuning SmolLM2-1.7B-Instruct model to create Finsight-AI, a specialized financial domain assistant. The fine-tuning was performed using QLoRA (Quantized Low-Rank Adaptation) to enhance the model's performance in financial contexts while maintaining computational efficiency.
 
-A more detailed paper on the project can be found in this repo here: [Model Paper](metrics/model_paper.md)
+A more detailed paper on the project can be found in this repo here: [Model Paper](metrics/Finsight-AI-Research-Paper.pdf)
 
 ## Project Structure
 
